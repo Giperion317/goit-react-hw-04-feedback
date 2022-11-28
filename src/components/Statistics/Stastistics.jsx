@@ -1,3 +1,6 @@
+import PropTypes from 'prop-types';
+import style from './Statistics.module.css';
+
 export const Statistics = ({
   good,
   neutral,
@@ -5,22 +8,31 @@ export const Statistics = ({
   total,
   positivePercentage,
 }) => (
-    <ul className="Statistics">
-      <li className="statisticsItem">
-        Good:<span className="good">{good}</span>
+    <ul className={style.statistics}>
+      <li className={style.item}>
+        Good:<span className={style.good}>{good}</span>
       </li>
-      <li className="statisticsItem">
-        Neutral:<span className="neutral">{neutral}</span>
+      <li className={style.item}>
+        Neutral:<span className={style.neutral}>{neutral}</span>
       </li>
-      <li className="statisticsItem">
-        Bad:<span className="bad">{bad}</span>
+      <li className={style.item}>
+        Bad:<span className={style.bad}>{bad}</span>
       </li>
-      <li className="statisticsItem">
-        Total:<span className="Total">{total}</span>
+      <li className={style.item}>
+        Total:<span className={style.total}>{total}</span>
       </li>
-      <li className="statisticsItem">
+      <li className={style.item}>
         Positive feedback:
-        <span className="positive">{positivePercentage}%</span>
+        <span className={style.good}>{positivePercentage}%</span>
       </li>
     </ul>
 );
+
+Statistics.propTypes = {
+  good: PropTypes.number.isRequired,
+  neutral: PropTypes.number.isRequired,
+  bad: PropTypes.number.isRequired,
+  total:PropTypes.number.isRequired,
+  positivePercentage: PropTypes.number.isRequired,
+}
+

@@ -1,0 +1,37 @@
+.statistics {
+  text-align: left;
+  padding: 0 30px;
+}
+
+.item {
+  font-size: 16hx;
+  margin-bottom: 10px;
+}
+
+.good {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(105, 158, 25);
+  margin-left: 10px;
+}
+
+.neutral {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(202, 190, 16);
+  margin-left: 10px;
+}
+
+.bad {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(158, 34, 25);
+  margin-left: 10px;
+}
+
+.total {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(25, 38, 158);
+  margin-left: 10px;
+}
